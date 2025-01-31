@@ -23,5 +23,5 @@ Welcome to my personal portfolio! This is a modern, fully-responsive portfolio w
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/jimmijameslinux.github.io.git
-cd jimmijameslinux.github.io
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
