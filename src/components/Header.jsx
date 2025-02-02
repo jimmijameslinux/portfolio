@@ -11,7 +11,7 @@ const Header = () => {
         <header className={`w-full top-0 z-10 p-4 fixed ${theme === "light" ? "bg-gray-800 dark:bg-white" : "bg-white dark:bg-black"} transition-colors duration-100`}>
             <div className="container mx-auto flex items-center justify-between">
                 {/* Hamburger Icon for small screens */}
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2 rounded-full">
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`md:hidden p-2 rounded-full hover:cursor-pointer  ${theme === "light" ? "hover:bg-gray-200 dark:hover:outline-2 dark:hover:outline-white" : "hover:bg-gray-800 dark:hover:outline-2 dark:hover:outline-white"}`}>
                     {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                 </button>
                 <h1 className="text-2xl font-semibold">Jimmi</h1>
@@ -23,7 +23,7 @@ const Header = () => {
 
 
                 {/* Mobile Menu */}
-                <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} absolute top-16 right-0 bg-white dark:bg-black w-full p-4`}>
+                <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} absolute top-16 right-0 bg-white dark:bg-black w-full p-4 ${theme === "light" ? "bg-gray-800 dark:bg-white" : "bg-white dark:bg-black"}`}>
                     <nav className="space-y-4">
                         <a href="#home" className="block hover:text-gray-500 dark:hover:text-gray-300">Home</a>
                         <a href="#about" className="block hover:text-gray-500 dark:hover:text-gray-300">About</a>
