@@ -14,13 +14,13 @@ const projects = [
     { title: "Project 4", desc: "Recipe Book website.", img: reipe, link: "https://jimrecipebook.netlify.app/" }
 ];
 
-const Projects = ({theme}) => {
+const Projects = ({ theme }) => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
     return (
         <section id="projects" className="py-12">
             <h2 className="text-3xl font-semibold text-center mb-8">Projects</h2>
-            <div ref={ref} className="container gap-10 grid grid-cols-3 px-12"            >
+            <div ref={ref} className="container gap-10 flex flex-wrap justify-center px-12"            >
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}
